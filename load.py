@@ -26,7 +26,7 @@ class quotes(Document):
 
 
 def add_authors():
-    with open('authors.json', 'r') as file:
+    with open('json/authors.json', 'r') as file:
         data = json.load(file)
 
     for item in data:
@@ -36,7 +36,7 @@ def add_authors():
         authors.save()
 
 def add_quotes():
-    with open('quotes.json', 'r') as file:
+    with open('json/quotes.json', 'r') as file:
         data = json.load(file)
 
     for item in data:
@@ -71,4 +71,4 @@ def search():
 
 add_authors()
 add_quotes()
-search()
+# search()
